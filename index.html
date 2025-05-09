@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Branddz Media | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --brand-primary: #002E6F;
+      --brand-secondary: #0083CA;
+      --brand-accent: #00C6FF;
+      --brand-dark: #0A0F1A;
+      --brand-light: #F5F8FC;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background-color: var(--brand-light); color: var(--brand-dark); }
+    .font-display { font-family: 'Poppins', sans-serif; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(20px);} to { opacity: 1; transform: translateY(0);} }
+    .animate-fadeUp { animation: fadeUp 0.6s ease-out both; }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="fixed w-full top-0 bg-white/70 backdrop-blur shadow-md z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <a href="#" class="font-display text-2xl font-bold text-[var(--brand-primary)]">Branddz</a>
+      <nav class="hidden md:flex gap-8 font-medium">
+        <a href="#services" class="relative hover:text-[var(--brand-secondary)] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-[var(--brand-secondary)] hover:after:w-full transition-all">Services</a>
+        <a href="#about" class="relative hover:text-[var(--brand-secondary)] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-[var(--brand-secondary)] hover:after:w-full transition-all">About</a>
+        <a href="#industries" class="relative hover:text-[var(--brand-secondary)] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-[var(--brand-secondary)] hover:after:w-full transition-all">Industries</a>
+        <a href="#team" class="relative hover:text-[var(--brand-secondary)] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-[var(--brand-secondary)] hover:after:w-full transition-all">Team</a>
+        <a href="#contact" class="relative hover:text-[var(--brand-secondary)] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-[var(--brand-secondary)] hover:after:w-full transition-all">Contact</a>
+      </nav>
+      <a href="#contact" class="hidden md:inline-block px-6 py-2 rounded-full bg-[var(--brand-secondary)] text-white font-semibold hover:bg-[var(--brand-primary)] transition-shadow shadow-md">Let's Talk</a>
+      <button id="burger" class="md:hidden text-[var(--brand-primary)] focus:outline-none">
+        <!-- menu icon -->
+      </button>
+    </div>
+  </header>
+
+   <!-- Hero -->
+
+
+  <section id="services" class="py-20 bg-light">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="font-display text-3xl md:text-4xl font-bold text-center mb-12">Our Services</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Service Card -->
+        <div class="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition border-t-4 border-primary">
+          <h3 class="font-semibold text-xl mb-2">Brand Strategy & Identity</h3>
+          <p class="text-sm">Crafting the story, personality, and visual DNA of your brand.</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition border-t-4 border-primary">
+          <h3 class="font-semibold text-xl mb-2">Creative Campaigns</h3>
+          <p class="text-sm">Big ideas that cut through — in digital, outdoor, social, and beyond.</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition border-t-4 border-primary">
+          <h3 class="font-semibold text-xl mb-2">Performance Marketing</h3>
+          <p class="text-sm">ROI‑focused advertising across Meta, Google, TikTok, and LinkedIn.</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition border-t-4 border-primary">
+          <h3 class="font-semibold text-xl mb-2">Social Media Management</h3>
+          <p class="text-sm">Building audiences, creating movements, sparking conversations.</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition border-t-4 border-primary">
+          <h3 class="font-semibold text-xl mb-2">Web & Landing Pages</h3>
+          <p class="text-sm">Where design meets conversion, and story meets strategy.</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition border-t-4 border-primary">
+          <h3 class="font-semibold text-xl mb-2">Video & Motion Design</h3>
+          <p class="text-sm">Turning attention spans into action with compelling visuals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="relative h-screen flex items-center justify-center text-center pt-20">
+    <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=1920&q=80" alt="Dubai skyline night" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-gradient-to-br from-[var(--brand-primary)/80] via-[var(--brand-secondary)/70] to-[var(--brand-accent)/60] mix-blend-multiply"></div>
+    <div class="relative max-w-3xl px-6 animate-fadeUp">
+      <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">From Idea to <span class="text-[var(--brand-accent)]">Influence</span></h1>
+      <p class="mt-4 text-lg text-white/90">We are the growth partner turning ambitious brands into irresistible movements across the UAE and beyond.</p>
+      <a href="#services" class="mt-8 inline-block px-8 py-3 bg-white text-[var(--brand-primary)] font-semibold rounded-full shadow hover:bg-[var(--brand-accent)] hover:text-white transition">Explore Services</a>
+    </div>
+  </section>
+  <!-- Our Services -->
+  <section id="services" class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="font-display text-3xl sm:text-4xl font-bold text-[var(--brand-primary)] mb-12">Our Services</h2>
+      <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-2">
+        <!-- Service Card -->
+        <div class="group bg-[var(--brand-light)] rounded-2xl p-8 shadow hover:shadow-lg transition relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-[var(--brand-accent)] opacity-10 transform rotate-45"></div>
+          <div class="flex items-center justify-center w-12 h-12 mx-auto mb-4 text-[var(--brand-secondary)]">
+            <!-- Strategy Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 8c-1.657 0-3 1.343-3 3v5h6v-5c0-1.657-1.343-3-3-3z"/><circle cx="12" cy="5" r="2"/></svg>
+          </div>
+          <h3 class="font-semibold text-xl mb-2 text-[var(--brand-primary)]">Brand Strategy & Identity</h3>
+          <p class="text-gray-700">Define your voice, values, and visual DNA to stand apart in crowded markets.</p>
+        </div>
+        <div class="group bg-[var(--brand-light)] rounded-2xl p-8 shadow hover:shadow-lg transition relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-[var(--brand-accent)] opacity-10 transform rotate-45"></div>
+          <div class="flex items-center justify-center w-12 h-12 mx-auto mb-4 text-[var(--brand-secondary)]">
+            <!-- Marketing Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M17 3l-4 4m0 0l-4 4m4-4h12"/></svg>
+          </div>
+          <h3 class="font-semibold text-xl mb-2 text-[var(--brand-primary)]">Performance Marketing</h3>
+          <p class="text-gray-700">Data-driven campaigns across Meta, TikTok, Google and more to scale revenue.</p>
+        </div>
+        <div class="group bg-[var(--brand-light)] rounded-2xl p-8 shadow hover:shadow-lg transition relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-[var(--brand-accent)] opacity-10 transform rotate-45"></div>
+          <div class="flex items-center justify-center w-12 h-12 mx-auto mb-4 text-[var(--brand-secondary)]">
+            <!-- Social Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"/></svg>
+          </div>
+          <h3 class="font-semibold text-xl mb-2 text-[var(--brand-primary)]">Social Media Management</h3>
+          <p class="text-gray-700">Create community, spark conversation, and foster loyalty across channels.</p>
+        </div>
+        <div class="group bg-[var(--brand-light)] rounded-2xl p-8 shadow hover:shadow-lg transition relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-[var(--brand-accent)] opacity-10 transform rotate-45"></div>
+          <div class="flex items-center justify-center w-12 h-12 mx-auto mb-4 text-[var(--brand-secondary)]">
+            <!-- Creative Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M4 15l4-4-4-4m16 8l-4-4 4-4"/></svg>
+          </div>
+          <h3 class="font-semibold text-xl mb-2 text-[var(--brand-primary)]">Creative Production</h3>
+          <p class="text-gray-700">High-impact visuals, motion, and copy that captivate and convert.</p>
+        </div>
+        <div class="group bg-[var(--brand-light)] rounded-2xl p-8 shadow hover:shadow-lg transition relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-[var(--brand-accent)] opacity-10 transform rotate-45"></div>
+          <div class="flex items-center justify-center w-12 h-12 mx-auto mb-4 text-[var(--brand-secondary)]">
+            <!-- Web Dev Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 20h9M12 4h9M4 9h16M4 15h16"/></svg>
+          </div>
+          <h3 class="font-semibold text-xl mb-2 text-[var(--brand-primary)]">Web Design & Development</h3>
+          <p class="text-gray-700">Responsive and engaging websites built for performance and aesthetics.</p>
+        </div>
+        <div class="group bg-[var(--brand-light)] rounded-2xl p-8 shadow hover:shadow-lg transition relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-[var(--brand-accent)] opacity-10 transform rotate-45"></div>
+          <div class="flex items-center justify-center w-12 h-12 mx-auto mb-4 text-[var(--brand-secondary)]">
+            <!-- Mobile App Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="7" y="4" width="10" height="16" rx="2" ry="2"/><path d="M11 5h2M11 19h2"/></svg>
+          </div>
+          <h3 class="font-semibold text-xl mb-2 text-[var(--brand-primary)]">Mobile Application Development</h3>
+          <p class="text-gray-700">Custom iOS and Android apps that engage users and drive results.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
+      <div>
+        <h2 class="font-display text-3xl font-bold mb-4">Our Mission</h2>
+        <p class="text-sm mb-8">To make brands unforgettable by connecting ambition with emotion. We help businesses speak not just to the mind — but to the soul.</p>
+        <h2 class="font-display text-3xl font-bold mb-4">Our Vision</h2>
+        <p class="text-sm">To become the Middle East’s most sought‑after marketing agency for brands that don’t just want results — they want a legacy.</p>
+      </div>
+      <div class="relative order-first md:order-none">
+        <img src="https://images.unsplash.com/photo-1529101091764-c3526daf38fe?auto=format&fit=crop&w=1200&q=80" alt="Dubai skyline" class="rounded-3xl shadow-lg">
+      </div>
+    </div>
+  </section>
+  <!-- About -->
+  <section id="about" class="py-32 bg-white relative overflow-hidden">
+    <svg class="absolute top-0 left-0 w-full" viewBox="0 0 1440 120"><path fill="var(--brand-light)" d="M0,96L1440,32L1440,0L0,0Z"></path></svg>
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div class="space-y-6 animate-fadeUp">
+        <h2 class="font-display text-4xl font-bold text-[var(--brand-primary)]">About Branddz</h2>
+        <p class="text-lg text-gray-700">A Dubai-grown media agency blending strategic thinking with creative execution. We craft stories that resonate & campaigns that perform.</p>
+        <ul class="list-disc list-inside text-gray-600 space-y-2">
+          <li>Full-funnel: strategy, creative, media & optimisation</li>
+          <li>Industry expertise: real estate, F&B, tech, hospitality</li>
+          <li>Transparent performance: real-time dashboards</li>
+        </ul>
+      </div>
+      <div class="animate-fadeUp">
+        <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=800&q=80" alt="Team brainstorming" class="rounded-3xl shadow-xl" />
+      </div>
+    </div>
+    <svg class="absolute bottom-0 left-0 w-full rotate-180" viewBox="0 0 1440 120"><path fill="var(--brand-light)" d="M0,96L1440,32L1440,0L0,0Z"></path></svg>
+  </section>
+
+   <!-- Industries -->
+   <section id="industries" class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="font-display text-3xl sm:text-4xl font-bold text-[var(--brand-primary)] mb-12">Industries We Elevate</h2>
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="p-6 rounded-xl shadow-lg hover:shadow-2xl transition border-t-4 border-[var(--brand-secondary)] bg-[var(--brand-light)]">
+          <h3 class="font-semibold text-lg text-[var(--brand-primary)] mb-2">Real Estate</h3>
+          <p class="text-gray-600">Off-plan, luxury, and commercial projects.</p>
+        </div>
+        <div class="p-6 rounded-xl shadow-lg hover:shadow-2xl transition border-t-4 border-[var(--brand-secondary)] bg-[var(--brand-light)]">
+          <h3 class="font-semibold text-lg text-[var(--brand-primary)] mb-2">F&amp;B & Hospitality</h3>
+          <p class="text-gray-600">Restaurant launches, experiential activations, and brand refreshes.</p>
+        </div>
+        <div class="p-6 rounded-xl shadow-lg hover:shadow-2xl transition border-t-4 border-[var(--brand-secondary)] bg-[var(--brand-light)]">
+          <h3 class="font-semibold text-lg text-[var(--brand-primary)] mb-2">Tech & Startups</h3>
+          <p class="text-gray-600">Go-to-market strategies, product launches, and growth hacking.</p>
+        </div>
+        <div class="p-6 rounded-xl shadow-lg hover:shadow-2xl transition border-t-4 border-[var(--brand-secondary)] bg-[var(--brand-light)]">
+          <h3 class="font-semibold text-lg text-[var(--brand-primary)] mb-2">Healthcare & Wellness</h3>
+          <p class="text-gray-600">Patient engagement, brand awareness, and digital health campaigns.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section id="team" class="py-24 relative bg-[var(--brand-light)]">
+    <svg class="absolute bottom-0 left-0 w-full rotate-180" viewBox="0 0 1440 80" preserveAspectRatio="none"><path fill="#FFFFFF" d="M0,80 C480,0 960,0 1440,80 L1440,0 L0,0 Z"></path></svg>
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="font-display text-3xl sm:text-4xl font-bold text-[var(--brand-primary)] mb-12">Meet Our Team</h2>
+      <div class="grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="space-y-4">
+          <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=400&q=80" alt="Founder" class="mx-auto rounded-full w-32 h-32 shadow-lg" />
+          <h3 class="font-semibold text-xl text-[var(--brand-primary)]">Alex Morgan</h3>
+          <p class="text-gray-600">Founder & CEO</p>
+        </div>
+        <div class="space-y-4">
+          <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=400&q=80" alt="Creative Director" class="mx-auto rounded-full w-32 h-32 shadow-lg" />
+          <h3 class="font-semibold text-xl text-[var(--brand-primary)]">Sara Thompson</h3>
+          <p class="text-gray-600">Creative Director</p>
+        </div>
+        <div class="space-y-4">
+          <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=400&q=80" alt="Performance Lead" class="mx-auto rounded-full w-32 h-32 shadow-lg" />
+          <h3 class="font-semibold text-xl text-[var(--brand-primary)]">David Lee</h3>
+          <p class="text-gray-600">Performance Lead</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="prose">
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-[var(--brand-primary)] mb-4">Get In Touch</h2>
+        <p>Ready to start your next project? Fill out the form and we'll be in touch shortly.</p>
+        <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-6 mt-6">
+          <input type="text" name="name" placeholder="Your Name*" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--brand-secondary)]" />
+          <input type="email" name="email" placeholder="Your Email*" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--brand-secondary)]" />
+          <textarea name="message" rows="5" placeholder="Your Message*" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--brand-secondary)]"></textarea>
+          <button type="submit" class="px-6 py-3 bg-[var(--brand-secondary)] text-white font-semibold rounded-full hover:bg-[var(--brand-primary)] transition">Send Message</button>
+        </form>
+      </div>
+      <div class="bg-[var(--brand-light)] p-8 rounded-2xl shadow-lg">
+        <h3 class="font-semibold text-xl text-[var(--brand-primary)] mb-4">Our Office</h3>
+        <p class="text-gray-600 mb-3">Bayswater, Business Bay, Dubai, UAE</p>
+        <p class="text-gray-600 mb-3">Email: hello@branddz.com</p>
+        <p class="text-gray-600 mb-3">Phone: +971 58 623 2132</p>
+
+        <!-- Quick Contact Links -->
+       <div class="pt-4 border-t border-gray-300">
+        <h4 class="font-semibold text-[var(--brand-primary)] mb-2">Quick Links</h4>
+        <ul class="flex gap-4">
+          <li><a href="#" aria-label="WhatsApp" class="hover:text-[var(--brand-secondary)]"><svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M20.52 3.48A11.82 11.82 0 003.48 20.52L2 22l2.32-.6A11.82 11.82 0 1020.52 3.48zm-8.52 17a9.17 9.17 0 01-4.6-1.25l-.33-.19-3.06.79.82-2.98-.21-.34A9.19 9.19 0 1112 20.48zm5-6.85c-.27-.13-1.6-.79-1.84-.88s-.43-.13-.61.13-.7.88-.86 1.06-.32.2-.59.07a7.54 7.54 0 01-2.21-1.36 8.35 8.35 0 01-1.55-1.9c-.16-.28 0-.43.12-.56.12-.12.28-.32.41-.48s.18-.27.27-.45a.49.49 0 000-.46c-.07-.13-.61-1.47-.84-2s-.45-.46-.61-.47h-.52a1 1 0 00-.73.34 3 3 0 00-1 2.24 5.27 5.27 0 001.11 2.58 12.06 12.06 0 004.37 4.39 10.24 10.24 0 002.53 1 6 6 0 002 .13 2.6 2.6 0 001.7-1.19 2.1 2.1 0 00.15-1.19c-.06-.12-.24-.19-.51-.32z"/></svg></a></li>
+          <li><a href="#" aria-label="Facebook" class="hover:text-[var(--brand-secondary)]"><svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12a10 10 0 10-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.2 1.8.2v2h-1c-1 0-1.3.6-1.3 1.3V12h2.3l-.4 3h-1.9v7A10 10 0 0022 12z"/></svg></a></li>
+          <li><a href="#" aria-label="Instagram" class="hover:text-[var(--brand-secondary)]"><svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5z"/><path d="M12 7a5 5 0 100 10 5 5 0 000-10zm0 1.5a3.5 3.5 0 110 7 3.5 3.5 0 010-7z"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a></li>
+          <li><a href="#" aria-label="TikTok" class="hover:text-[var(--brand-secondary)]"><svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M9 3h3v12.5a2.5 2.5 0 11-2.5-2.5H9V3z"/><path d="M13.5 3.75a5.25 5.25 0 005.25 5.25V8A7 7 0 1113.5 1v2.75z"/></svg></a></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[var(--brand-dark)] text-[var(--brand-light)] py-12">
+    <div class="max-w-6xl mx-auto px-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="space-y-4">
+        <h4 class="font-display text-lg font-bold text-[var(--brand-primary)]">Branddz</h4>
+        <p class="text-gray-300">Turning ideas into movements since 2015.</p>
+      </div>
+      <div>
+        <h5 class="font-semibold text-[var(--brand-light)] mb-3">Quick Links</h5>
+        <ul class="space-y-2 text-[var(--brand-light)]">
+          <li><a href="#services" class="hover:underline">Services</a></li>
+          <li><a href="#about" class="hover:underline">About</a></li>
+          <li><a href="#industries" class="hover:underline">Industries</a></li>
+          <li><a href="#team" class="hover:underline">Team</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-semibold text-[var(--brand-light)] mb-3">Follow Us</h5>
+        <ul class="flex gap-4">
+          <li><a href="#" aria-label="LinkedIn"><svg class="w-6 h-6 text-[var(--brand-light)] hover:text-[var(--brand-secondary)] transition" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5V24H0V8zm7.5 0h4.5v2.4h.1c.6-1.1 2-2.4 4.1-2.4 4.4 0 5.2 2.9 5.2 6.7V24h-5v-7.4c0-1.8-.03-4.1-2.5-4.1-2.5 0-2.9 2-2.9 4v7.5h-5V8z"/></svg></a></li>
+          <li><a href="#" aria-label="Twitter"><svg class="w-6 h-6 text-[var(--brand-light)] hover:text-[var(--brand-secondary)] transition" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.6c-.9.4-1.8.6-2.8.8 1-.6 1.8-1.5 2.2-2.6-.9.5-1.9.8-3 1-1-.9-2.4-1.5-3.9-1.5-3 0-5.5 2.5-5.5 5.5 0 .4 0 .8.1 1.1-4.6-.2-8.7-2.4-11.4-5.7-.5.8-.8 1.5-.8 2.4 0 1.6.8 3 2 3.8-.7 0-1.4-.2-2-.6v.1c0 2.3 1.6 4.3 3.7 4.8-.4.1-.9.2-1.4.2-.3 0-.6 0-.9-.1.6 2 2.5 3.5 4.7 3.5-1.7 1.3-3.8 2.1-6.1 2.1-.4 0-.8 0-1.2-.1 2.2 1.4 4.8 2.3 7.6 2.3 9.1 0 14.1-7.5 14.1-14.1 0-.2 0-.5 0-.7 1 1 2.2 1.8 3.5 2.5z"/></svg></a></li>
+          <li><a href="#" aria-label="Instagram"><svg class="w-6 h-6 text-[var(--brand-light)] hover:text-[var(--brand-secondary)] transition" fill="currentColor" viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5z"/><path d="M12 7a5 5 0 100 10 5 5 0 000-10zm0 1.5a3.5 3.5 0 110 7 3.5 3.5 0 010-7z"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a></li>
+  <li><a href="#" aria-label="Facebook"><svg class="w-6 h-6 text-[var(--brand-light)] hover:text-[var(--brand-secondary)] transition" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12a10 10 0 10-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.2 1.8.2v2h-1c-1 0-1.3.6-1.3 1.3V12h2.3l-.4 3h-1.9v7A10 10 0 0022 12z"/></svg></a></li>
+        <li><a href="#" aria-label="Instagram"><svg class="w-6 h-6 text-[var(--brand-light)] hover:text-[var(--brand-secondary)] transition" fill="currentColor" viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5z"/><path d="M12 7a5 5 0 100 10 5 5 0 000-10zm0 1.5a3.5 3.5 0 110 7 3.5 3.5 0 010-7z"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a></li>
+          <li><a href="#" aria-label="Facebook"><svg class="w-6 h-6 text-[var(--brand-light)] hover:text-[var(--brand-secondary)] transition" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12a10 10 0 10-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.2 1.8.2v2h-1c-1 0-1.3.6-1.3 1.3V12h2.3l-.4 3h-1.9v7A10 10 0 0022 12z"/></svg></a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-semibold text-[var(--brand-light)] mb-3">Newsletter</h5>
+        <form class="flex flex-col sm:flex-row gap-2">
+          <input type="email" placeholder="Your email" class="w-full p-3 rounded-lg border border-gray-600 bg-[var(--brand-dark)] text-[var(--brand-light)] focus:outline-none" />
+          <button type="submit" class="px-6 py-3 bg-[var(--brand-secondary)] text-[var(--brand-dark)] rounded-lg font-medium hover:bg-[var(--brand-accent)] transition">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="mt-12 text-center text-[var(--brand-light)] text-sm">© 2025 Branddz Media. All rights reserved.</div>
+  </footer>
+
+</body>
+</html>
